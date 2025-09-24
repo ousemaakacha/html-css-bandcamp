@@ -68,5 +68,42 @@ header {
   }
 }
 
-.bottom {
+.container {
+  display: flex;
+  padding: 1rem;
+  gap: 2rem;
+  background-color: #222;
+  /* border: 5px solid white; */
+}
+
+.col-left {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  gap: 1.5rem;
+  /* border: 5px solid white; */
+}
+.card {
+  color: white;
+  overflow: hidden;
+  /* border: 5px solid rgb(235, 5, 36); */
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  border: 1rem;
+}
+.info {
+  padding: 0.5rem;
+}
+.title {
+  font-weight: bold;
+}
+.artist {
+  font-size: 0.9rem;
+  color: white;
+}
+.genre {
+  font-size: 0.8rem;
+  color: #777;
 }
