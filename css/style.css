@@ -85,6 +85,8 @@ header {
   gap: 1.5rem;
   width: 70%;
   overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #4646 #222;
 
   /* border: 5px solid white; */
 }
@@ -119,6 +121,8 @@ header {
   width: 30%;
   height: calc(100vh - 100px);
   overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #4646 #222;
 }
 
 .right-img {
