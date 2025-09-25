@@ -115,7 +115,7 @@ header {
   color: #777;
 }
 
-/* PLAYER */
+/* COL-RIGHT */
 
 .col-right {
   width: 30%;
@@ -123,6 +123,10 @@ header {
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: #4646 #222;
+}
+
+.tab-text {
+  display: none;
 }
 
 .right-img {
@@ -173,4 +177,29 @@ header {
 .under-text {
   padding-top: 2rem;
   color: white;
+}
+
+@media screen and (max-width: 745px) {
+  .col-left {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 220px);
+    gap: 1.5rem;
+  }
+
+  .col-right {
+    width: 30%;
+
+    img {
+      width: 100%;
+    }
+
+    .img-info {
+      gap: 1rem;
+    }
+
+    .tab-text {
+      display: block;
+    }
+  }
 }
