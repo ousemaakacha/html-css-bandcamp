@@ -22,6 +22,10 @@ header {
     background-color: #222222;
     padding: 0 1rem;
 
+    .bc-logo {
+      display: none;
+    }
+
     img {
       width: 30%;
     }
@@ -43,7 +47,7 @@ header {
     #search {
       display: inline;
       align-items: center;
-      width: 250px;
+      width: 400px;
       border: none;
       background-color: #464646;
       border-radius: 4px;
@@ -81,7 +85,7 @@ header {
 .col-left {
   height: calc(100vh - 100px);
   display: grid;
-  grid-template-columns: repeat(4, 290px);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
   width: 70%;
   overflow-y: auto;
@@ -187,7 +191,7 @@ header {
   .col-left {
     width: 65%;
     display: grid;
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
 
