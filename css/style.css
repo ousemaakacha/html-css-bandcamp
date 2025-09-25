@@ -40,7 +40,7 @@ header {
       }
     }
 
-    .search {
+    #search {
       display: inline;
       align-items: center;
       width: 250px;
@@ -81,7 +81,7 @@ header {
 .col-left {
   height: calc(100vh - 100px);
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 290px);
   gap: 1.5rem;
   width: 70%;
   overflow-y: auto;
@@ -183,13 +183,11 @@ header {
   color: white;
 }
 
-/* TABLET QUERY */
-
 @media screen and (max-width: 745px) {
   .col-left {
     width: 65%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 200px);
     gap: 1.5rem;
   }
 
