@@ -81,7 +81,7 @@ header {
 .col-left {
   height: calc(100vh - 100px);
   display: grid;
-  grid-template-columns: repeat(4, 280px);
+  grid-template-columns: repeat(4, 290px);
   gap: 1.5rem;
   width: 70%;
   overflow-y: auto;
@@ -174,6 +174,10 @@ header {
   }
 }
 
+.artist-info {
+  display: none;
+}
+
 .under-text {
   padding-top: 2rem;
   color: white;
@@ -181,14 +185,14 @@ header {
 
 @media screen and (max-width: 745px) {
   .col-left {
-    width: 70%;
+    width: 65%;
     display: grid;
-    grid-template-columns: repeat(2, 220px);
+    grid-template-columns: repeat(2, 200px);
     gap: 1.5rem;
   }
 
   .col-right {
-    width: 30%;
+    width: 35%;
 
     img {
       width: 100%;
@@ -200,6 +204,35 @@ header {
 
     .tab-text {
       display: block;
+    }
+
+    .artist-info {
+      padding-top: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      color: white;
+      img {
+        width: 70px;
+      }
+
+      ul {
+        list-style: none;
+        line-height: 22px;
+      }
+    }
+
+    .fol-but {
+      padding-top: 2rem;
+      button {
+        width: 100%;
+        height: 3rem;
+        border-radius: 5px;
+        border: 2px solid white;
+        background-color: transparent;
+        color: white;
+        font-size: 20px;
+      }
     }
   }
 }
