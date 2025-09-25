@@ -26,7 +26,7 @@ header {
       display: none;
     }
 
-    img {
+    .logo {
       width: 30%;
     }
 
@@ -129,6 +129,10 @@ header {
   scrollbar-color: #4646 #222;
 }
 
+.fol-but {
+  display: none;
+}
+
 .tab-text {
   display: none;
 }
@@ -141,6 +145,7 @@ header {
   display: flex;
   padding-top: 2.5rem;
   padding-bottom: 1rem;
+  gap: 1rem;
 
   i {
     font-size: 5rem;
@@ -198,7 +203,7 @@ header {
   .col-right {
     width: 35%;
 
-    img {
+    .logo {
       width: 100%;
     }
 
@@ -246,10 +251,14 @@ header {
 @media screen and (max-width: 601px) {
   header {
     .top-part {
-      .img {
+      .bc-logo {
+        display: block;
+        width: 50%;
+      }
+      .logo {
         display: none;
       }
-      .search {
+      #search {
         display: none;
       }
     }
