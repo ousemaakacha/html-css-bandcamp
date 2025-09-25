@@ -7,6 +7,7 @@
 body {
   height: 100vh;
   background-color: #222;
+  overflow: scroll;
 }
 
 header {
@@ -79,7 +80,7 @@ header {
 
 .col-left {
   display: grid;
-  grid-template-columns: repeat(4, 225px);
+  grid-template-columns: repeat(4, 280px);
   gap: 1.5rem;
   width: 70%;
 
@@ -87,7 +88,6 @@ header {
 }
 .card {
   color: white;
-  /* overflow: hidden; */
   /* border: 5px solid rgb(235, 5, 36); */
 }
 
@@ -122,4 +122,46 @@ header {
 }
 
 .img-info {
+  display: flex;
+  padding-top: 2.5rem;
+  padding-bottom: 1rem;
+
+  i {
+    font-size: 5rem;
+    color: white;
+  }
+}
+
+.img-text {
+  flex-direction: column;
+  gap: 0.3rem;
+  color: white;
+}
+
+.album {
+  padding: 1rem 0;
+  button {
+    width: 100%;
+    height: 3rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+  }
+}
+
+.wishlist {
+  button {
+    width: 100%;
+    height: 3rem;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+  }
+}
+
+.under-text {
+  padding-top: 2rem;
+  color: white;
 }
