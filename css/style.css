@@ -6,6 +6,7 @@
 
 body {
   height: 100vh;
+  background-color: #222;
 }
 
 header {
@@ -78,13 +79,15 @@ header {
 
 .col-left {
   display: grid;
-  grid-template-columns: repeat(4, 200px);
+  grid-template-columns: repeat(4, 225px);
   gap: 1.5rem;
+  width: 70%;
+
   /* border: 5px solid white; */
 }
 .card {
   color: white;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* border: 5px solid rgb(235, 5, 36); */
 }
 
@@ -106,4 +109,17 @@ header {
 .genre {
   font-size: 0.8rem;
   color: #777;
+}
+
+/* PLAYER */
+
+.col-right {
+  width: 30%;
+}
+
+.right-img {
+  width: 100%;
+}
+
+.img-info {
 }
