@@ -127,7 +127,7 @@ header {
   &:hover {
   transform: scale(0.95);
   transition: transform 0.3s ease;
-  border: 3px solid lightgray;
+  border: 3px solid rgba(211, 211, 211, 0.269);
   }
   
 }
