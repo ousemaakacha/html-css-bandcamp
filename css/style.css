@@ -117,10 +117,19 @@ header {
   /* border: 5px solid rgb(235, 5, 36); */
 }
 
-.card img {
+
+
+.col-left .card img {
   width: 100%;
   display: block;
   border: 1rem;
+
+  &:hover {
+  transform: scale(0.95);
+  transition: transform 0.3s ease;
+  border: 3px solid lightgray;
+  }
+  
 }
 .info {
   padding: 0.5rem;
@@ -145,6 +154,7 @@ header {
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: #4646 #222;
+
 }
 
 .fol-but {
@@ -157,6 +167,11 @@ header {
 
 .right-img {
   width: 100%;
+  &:hover {
+    transform: none;
+}
+border: none;
+
 }
 
 .img-info {
@@ -285,10 +300,12 @@ header {
         display: none;
       }
 
-      .right {
-        display: inline-block;
-        color: white;
-      }
+      .righty {
+        .right {
+          display: inline-block;
+          color: white;
+        }
+        
     }
 
     .bot-part {
